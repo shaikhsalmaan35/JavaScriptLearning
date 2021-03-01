@@ -14,12 +14,30 @@
         t=[1,2,3,4,5,6,7,8,9];
         x=cars.length;
         document.getElementById("demo").innerHTML = t [3];
+    
         //Create an object:
+    
         var car =[
             { type:"fiat", model:"500",color:"white"},
-            { type:"BMW", model:"600",color:"blue"}
+            { type:"BMW", model:"600",color:"blue"} 
     ];
-    document.getElementById("demo").innerHTML = "The car type is " + car [0].type;
+    
+    //Display some data from the object:
+
+    document.getElementById("demo").innerHTML = "The car type is " + car [1].type;
+
+    Person =
+            {
+                FirstName:"Aamer", 
+                lastName:"Sohel", 
+                fatherName:"Ahmed",
+                gender:"Male",
+                fullname:this
+            }
+
+    //Display some data from the object:
+    document.getElementById("demo").innerHTML = "The car type is " + Person.FirstName+Person.lastName;
+
     </script>
     
 </body>
