@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function msg(){
-            document.getElementById("Num1").value
-            alert("Addition of two number")
+        function Add(){
+            a=document.getElementById("Num1").value
+            b=document.getElementById("Num2").value
+            c=parseInt(a)+parseInt(b)
+            alert("Addition of two number     "  +c )
+        }
+        function Sub(){
+            a=document.getElementById("Num1").value
+            b=document.getElementById("Num2").value
+            c=parseInt(a) - parseInt(b)
+            alert("Substraction of two number     "  +c )
         }
     </script>
 </head>
 <body>
     <label>Enter First No.</label>
-    <input id="Num1" type="text">
+    <input id="Num1" type="text"> <br>
     <label>Enter Second No.</label>
     <input id="Num2" type="text">
-    <button onclick="msg()">Add</button>
-    <button>Sub</button>
+    <button onclick="Add()">Add</button>
+    <button onclick="Sub()">Sub</button>
     <button>Mul</button>
     <button>Div</button>
     <button>Mod</button>
