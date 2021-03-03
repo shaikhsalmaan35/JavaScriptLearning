@@ -7,16 +7,17 @@
     <title>Document</title>
     <script>
         function msg(){
+            document.getElementById("Num1").value
             alert("Addition of two number")
         }
     </script>
 </head>
 <body>
     <label>Enter First No.</label>
-    <input type="text">
+    <input id="Num1" type="text">
     <label>Enter Second No.</label>
-    <input type="text">
-    <button>Add</button>
+    <input id="Num2" type="text">
+    <button onclick="msg()">Add</button>
     <button>Sub</button>
     <button>Mul</button>
     <button>Div</button>
