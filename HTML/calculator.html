@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        form{
+        body{
+            background-image: url(./imges/10.jpg);
+            background-size: cover;
+        }
+        div{
             
-            background-color: aqua;
-            box-shadow: 0 5px 5px 0 black;
+            /* background-color:gray; */
+            box-shadow: 0 0 10px  black;
             text-align: center;
-            width: 25%;
+            width: 30%;
+            height: 40%;
+            padding-top: 40px;
             position: absolute;
-            left: 40%;
-            top: 35%;
+            border-radius: 30px;
+            left: 35%;
+            top: 30%;
+        }
+        button{
+            box-shadow: 0 2px 3px 0 black;
+            background-color: white;
         }
     </style>
     <script>
@@ -22,7 +33,14 @@
             a=document.getElementById("Num1").value
             b=document.getElementById("Num2").value
             c=parseInt(a)+parseInt(b)
-            alert("Addition of two number     "  +c )
+            // if(a==""){
+            //     alert("Please Enter Num1");
+            // }
+            // if(b==""){
+            //     alert("Please Enter Num2");
+            // }
+            document.getElementById("Num3").value=c;
+            // alert("Addition of two number     "  +c )
         }
         function Sub(){
             a=document.getElementById("Num1").value
@@ -30,19 +48,23 @@
             c=parseInt(a) - parseInt(b)
             alert("Substraction of two number     "  +c )
         }
+        
     </script>
 </head>
 <body>
-    <form action="">
+    <div class="Card">
     <label>Enter First No.</label><br>
-    <input id="Num1" type="text"> <br>
+    <input id="Num1" type="text" placeholder="Enter your 1st no."> <br>
     <label>Enter Second No.</label><br>
-    <input id="Num2" type="text"><br><br>
+    <input id="Num2" type="text" placeholder="Enter your 2nd no"><br><br>
+    <label>Total</label><br>
+    <input type="text" id="Num3"><br><br>
     <button onclick="Add()">Add</button>
     <button onclick="Sub()">Sub</button><br><br>
-    <button>Mul</button>
+    <button >Mul</button>
     <button>Div</button>
     <button>Mod</button><br>
-</form>
+    
+</div>
 </body>
 </html>
