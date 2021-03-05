@@ -57,8 +57,10 @@
             a=document.getElementById("Num1").value
             b=document.getElementById("Num2").value
             c=parseInt(a) - parseInt(b)
-            alert("Substraction of two number     "  +c )
+            document.getElementById("Num3").value=c;
+            // alert("Substraction of two number     "  +c )
         }
+      
         
     </script>
 </head>
@@ -70,6 +72,9 @@
     <input id="Num2" type="text" placeholder="Enter your 2nd no"><br><br>
     <label><b>Total</b></label><br>
     <input type="text" id="Num3"><br><br>
+
+    <button onclick="Add()">  1  </button>
+    
     <button onclick="Add()">  +  </button>
     <button onclick="Sub()">  -  </button><br><br>
     <button onclick="Mul()">  X  </button>
