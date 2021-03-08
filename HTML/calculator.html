@@ -15,18 +15,20 @@
             /* background-color:gray; */
             box-shadow: 0 0 10px  black;
             text-align: center;
-            width: 60%;
-            height: 50%;
+            width: 50%;
+            padding: 10px;
             padding-top: 20px;
             position: absolute;
             border-radius: 30px;
             left: 20%;
             top: 30%;
+            background-color: rgb(128, 125, 121 ,0.);
         }
         button{
             box-shadow: 0 2px 3px 0 black;
             background-color: white;
             width: 50px;
+            padding: 10px;
         }
         input{
             border-radius: 50px;
@@ -37,6 +39,10 @@
         label{
             color: rgb(80, 75, 75);
         }
+        .equal{
+            width: 160px;
+        }
+        
         
     </style>
     <script>
@@ -81,7 +87,7 @@
             document.getElementById("Num3").value=c;
             // alert("Substraction of two number     "  +c )
         }
-        
+      
     </script>
 </head>
 <body>
@@ -95,19 +101,23 @@
 
     <button onclick="Add()">  1  </button>
     <button onclick="Add()">  2  </button>
-    <button onclick="Add()">  3  </button><br>
+    <button onclick="Add()">  3  </button>
+    <button onclick="Add()">  +  </button><br>
     <button onclick="Add()">  4  </button>
     <button onclick="Add()">  5  </button>
-    <button onclick="Add()">  6  </button><br>
+    <button onclick="Add()">  6  </button>
+    <button onclick="Sub()">  -  </button><br>
     <button onclick="Add()">  7  </button>
     <button onclick="Add()">  8  </button>
-    <button onclick="Add()">  9  </button><br>
+    <button onclick="Add()">  9  </button>
+    <button onclick="Mul()">  X  </button><br>
+    <button onclick="Add()">  * </button>
     <button onclick="Add()">  0  </button>
-    <button onclick="Add()">  +  </button>
-    <button onclick="Sub()">  -  </button><br><br>
-    <button onclick="Mul()">  X  </button>
-    <button onclick="Div()">  %  </button>
+    <button onclick="Add()">  #  </button>
     <button onclick="Mod()">  /  </button><br>
+    <button class="equal" onclick="Div()">  = </button>
+    <button onclick="Div()">  %  </button>
+    <br>
     
 </div>
 </body>
