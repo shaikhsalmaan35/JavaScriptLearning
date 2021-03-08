@@ -14,18 +14,24 @@
         height: 40px;
         width: 50px;
         text-align: center;
-        box-shadow:  rgb(247, 241, 241) 2px 2px 1px 0 ;
-        background-color:rgb(171, 245, 245) ;
+        box-shadow:  rgb(247, 241, 241) 1px 1px 0 0 ;
+        background-color:black ;
+        border-radius: 5px;
+        color: white;
     }
     .dis-field{
         width: 250px;
         margin: 10px;
         padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        border-radius: 10px;
     }
     #myForm{
         background-color: teal;
         width: fit-content;
-        margin: 10px;
+        margin: 15px;
+        border-radius: 10px;
         position: absolute;
         left: 35%;
         top: 10%;
@@ -35,17 +41,17 @@
 <body>
     <form id="myForm" name="Calc">
         <input class="dis-field" name="display"><br>
-        <input type="button" value="1" onclick="Calc.display.value+='1'">
-        <input type="button" value="2" onclick="Calc.display.value+='2'">
-        <input type="button" value="3" onclick="Calc.display.value+='3'">
+        <input type="button" value="7" onclick="Calc.display.value+='7'">
+        <input type="button" value="8" onclick="Calc.display.value+='8'">
+        <input type="button" value="9" onclick="Calc.display.value+='9'">
         <input type="button" value="+" onclick="Calc.display.value+='+'"><br>
         <input type="button" value="4" onclick="Calc.display.value+='4'">
         <input type="button" value="5" onclick="Calc.display.value+='5'">
         <input type="button" value="6" onclick="Calc.display.value+='6'">
         <input type="button" value="-" onclick="Calc.display.value+='-'"><br>
-        <input type="button" value="7" onclick="Calc.display.value+='7'">
-        <input type="button" value="8" onclick="Calc.display.value+='8'">
-        <input type="button" value="9" onclick="Calc.display.value+='9'">
+        <input type="button" value="1" onclick="Calc.display.value+='1'">
+        <input type="button" value="2" onclick="Calc.display.value+='2'">
+        <input type="button" value="3" onclick="Calc.display.value+='3'">
         <input type="button" value="x" onclick="Calc.display.value+='*'"><br>
         <input type="button" value="0" onclick="Calc.display.value+='0'">
         <input type="button" value="C" onclick="Calc.display.value=''">
