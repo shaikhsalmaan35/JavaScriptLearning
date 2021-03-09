@@ -2,5 +2,6 @@
 var id = setTimeout(Anim,3000);
 
 function Anim(){
-    console.log("Hello");
+   var target = document.getElementById("test");
+   target.style.width = "500px";
 }
